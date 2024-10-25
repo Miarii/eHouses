@@ -25,12 +25,11 @@
         extend: {
           colors: {
 
-
-
-
-            'primary': '#e11d48',
-            'secondary': '#34495e',
-            'accent': '#3498db',
+            'primary': '#6b04fd',
+            'secondary': '#9f75ff',
+            'accent': '#843dff',
+            'textB': '#3b3b3b',
+            'textH': '#5a03d5',
           },
           fontFamily: {
             manrope: ['manrope', 'manrope'],
@@ -39,10 +38,10 @@
       }
     }
   </script>
-
 </head>
 
 <body id="Homee" class="font-sans">
+  <!-- header  -->
   <!-- navnar -->
   <header class=" py-3">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -62,23 +61,23 @@
           <nav aria-label="Global">
             <ul class="flex items-center gap-6 text-sm">
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#Homee"> Home </a>
+                <a class="text-textB transition hover:text-textB/75" href="#Homee"> Home </a>
               </li>
 
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#featured-section"> Options </a>
+                <a class="text-textB transition hover:text-textB/75" href="#featured-section"> Options </a>
               </li>
 
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#buy-property"> Houses </a>
+                <a class="text-textB transition hover:text-textB/75" href="#buy-property"> Houses </a>
               </li>
 
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#Blog"> Blog </a>
+                <a class="text-textB transition hover:text-textB/75" href="#Blog"> Blog </a>
               </li>
 
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="#footer"> Contact </a>
+                <a class="text-textB transition hover:text-textB/75" href="#footer"> Contact </a>
               </li>
             </ul>
           </nav>
@@ -86,10 +85,10 @@
 
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">
-            <button class="text-red-500 btn-outline btn">Login</button>
+            <button class="text-primary btn-outline btn">Login</button>
 
             <div class="hidden sm:flex">
-              <button class="text-gray-500 btn-outline btn">Register</button>
+              <button class="text-accent btn-outline btn">Register</button>
             </div>
           </div>
 
@@ -105,59 +104,61 @@
       </div>
     </div>
   </header>
-  <!-- header  -->
+  <!-- banner -->
+  <section class="bg-black mx-auto h-[600px] w-4/5 overflow-hidden relative">
+    <div>
+      <img class="absolute bg-cover bg-center bg-no-repeat lg:w-full h-[600px] mx-auto rounded-md opacity-70"
+        src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+        alt="">
+      <div
+        class="absolute inset-0 bg-gray-900/95 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l">
+      </div>
 
-  <section
-    class=" relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat lg:w-4/5 h-[600px] mx-auto rounded-md">
-    <div
-      class="absolute inset-0 bg-gray-900/75 sm:bg-transparent sm:from-gray-900/95 sm:to-gray-900/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l">
-    </div>
+      <div class="relative z-10 mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+        <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+          <h1 class="text-3xl font-extrabold text-white sm:text-5xl text-left">
+            Let us find your
 
-    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-      <div class="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-        <h1 class="text-3xl font-extrabold text-white sm:text-5xl text-left">
-          Let us find your
+            <strong class="block font-extrabold text-primary text-left shadow-md">Forever Home</strong>
+          </h1>
 
-          <strong class="block font-extrabold text-primary text-left shadow-md">Forever Home</strong>
-        </h1>
+          <p class="mt-4 max-w-lg text-white sm:text-xl/relaxed text-left">
+            Start your journey today and discover a place you'll love to call home!
+          </p>
 
-        <p class="mt-4 max-w-lg text-white sm:text-xl/relaxed text-left">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo tenetur fuga ducimus
-          numquam ea!
-        </p>
+          <div class="mt-8 flex flex-wrap gap-4 text-center">
+            <a href="#featured-section"
+              class="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-accent focus:outline-none focus:ring active:bg-accent sm:w-auto">
+              Go there
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </a>
 
-        <div class="mt-8 flex flex-wrap gap-4 text-center">
-          <a href="#featured-section"
-            class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
-            Go there
-            <i class="fa-solid fa-arrow-trend-up"></i>
-          </a>
-
-          <a href="#"
-            class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-600 hover:bg-gray-100 focus:outline-none focus:ring active:text-rose-500 active:bg-gray-300 sm:w-auto">
-            Learn More
-          </a>
+            <a href="#"
+              class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-primary shadow hover:text-accent hover:bg-gray-100 focus:outline-none focus:ring active:text-accent active:bg-gray-300 sm:w-auto">
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
     </div>
-
-    <div>
-      <a href="#Homee">
-        <button class="btn text-red-500 btn-outline btn fixed bottom-0 right-0 h-12 w-12 mb-10">
-
-          <i class="fa-solid fa-caret-up"></i>
-
-        </button>
-      </a>
-    </div>
-
   </section>
+  <div>
+    <a href="#Homee">
+      <button class="btn text-accent btn-outline btn fixed bottom-0 right-0 h-12 w-12 mb-10">
 
+        <i class="fa-solid fa-caret-up"></i>
+
+      </button>
+    </a>
+  </div>
+
+  </div>
   <!-- featured section -->
   <section id="featured-section" class="my-24 w-4/5 mx-auto">
 
-    <h2 class="text-4xl mb-5 mx-auto items-center text-center">select options</h2>
-    <p class="mb-10 mx-auto text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam.</p>
+    <h2 class="text-4xl mb-5 mx-auto items-center text-center text-textH">select options</h2>
+    <p class="mb-10 mx-auto text-center text-textB">Explore various options to find your perfect home</p>
+
 
     <!-- featured container -->
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
@@ -167,7 +168,7 @@
         <div class="card-body justify-center grid col-span-1 lg:gap-6">
           <img class="mx-auto" src="https://wp.themepure.net/bhume/wp-content/uploads/2024/09/icon-1.png" alt="">
 
-          <a href="#buy-property" class="text-2xl font-bold">Buy property</a>
+          <a href="#buy-property" class="text-2xl font-bold underline">Buy property</a>
 
         </div>
       </div>
@@ -175,14 +176,14 @@
       <div class="btn btn-outline h-60 sm:p-8 shadow-md">
         <div class="card-body justify-center grid col-span-1 lg:gap-6">
           <img class="mx-auto" src="https://wp.themepure.net/bhume/wp-content/uploads/2024/09/icon-2.png" alt="">
-          <a href="#sell-property" class="text-2xl font-bold">Sell property</a>
+          <a href="#sell-property" class="text-2xl font-bold underline">Sell property</a>
         </div>
       </div>
       <!-- Rent Property -->
       <div class="btn btn-outline h-60 sm:p-8 shadow-md">
         <div class="card-body justify-center grid col-span-1 lg:gap-6">
           <img class="mx-auto" src="https://wp.themepure.net/bhume/wp-content/uploads/2024/09/icon-3.png" alt="">
-          <a href="#Rent-property" class="text-2xl font-bold">Rent property</a href="#buy-property">
+          <a href="#Rent-property" class="text-2xl font-bold underline">Rent property</a href="#buy-property">
         </div>
       </div>
 
@@ -199,11 +200,10 @@
   <section id="buy-property">
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 my-24">
       <header>
-        <h2 class="text-5xl font-bold text-primary text-gray-900 sm:text-3xl text-left">Top Picks</h2>
+        <h2 class="text-5xl font-bold text-primary text-textH sm:text-3xl text-left">Top Picks</h2>
 
-        <p class="mt-4 max-w-md text-gray-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
-          dicta incidunt est ipsam, officia dolor fugit natus?
+        <p class="mt-4 max-w-md text-textB">
+          Discover our curated selection of the best products tailored just for you. From innovative gadgets to stylish apparel, each item has been handpicked to enhance your lifestyle.
         </p>
       </header>
 
@@ -222,9 +222,9 @@
       <div class="mt-4 lg:mt-8 lg:grid lg:grid-cols-4 lg:items-start lg:gap-8">
         <div class="hidden space-y-4 lg:block">
           <div>
-            <label for="SortBy" class="block text-xs font-medium text-gray-700"> Sort By </label>
+            <label for="SortBy" class="block text-md font-medium text-textH"> Sort By :</label>
 
-            <select id="SortBy" class="mt-1 rounded border-gray-300 text-sm">
+            <select id="SortBy" class="mt-1 rounded p-1 border-gray-300 text-sm">
               <option>Sort By</option>
               <option value="Title, DESC">Title, DESC</option>
               <option value="Title, ASC">Title, ASC</option>
@@ -409,7 +409,7 @@
         <div class="lg:col-span-3">
           <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <li>
-              <a href="#" class="group block overflow-hidden">
+              <a href="#" class="group block overflow-hidden ">
                 <img src="./images/new/house.jpg" alt=""
                   class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]" />
 
@@ -472,58 +472,58 @@
   <!-- Discounts -->
   <section class="lg:w-4/5 mx-auto mb-24">
     <div class="text-center">
-      <h2 class="text-4xl mb-5">Discounts</h2>
-      <p class="lg:max-w-3xl mb-10 mx-auto">Lorem ipsum, dolor sit amet consectetur adipisicing. </p>
+        <h2 class="text-4xl mb-5 text-textH">Discounts</h2>
+        <p class="lg:max-w-3xl mb-10 mx-auto">Get your best price with the discount coupons!!!</p>
     </div>
 
     <div class="md:mx-10 flex justify-evenly flex-col lg:flex-row">
 
-      <!-- news 1 -->
-      <div class="card bg-base-100 lg:w-96 mx-4 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="./images/new/house.jpg" alt="Sell your house" class="rounded-xl" />
-        </figure>
-        <div class="card-body justify-start text-left">
-          <p class="text-[#777777] text-sm">Feb 05, 2027</p>
-          <h2 class="card-title">Collecting 8 points for <br> discount</h2>
-          <p>There are many variations of passages of Lorem Ipsum available.</p>`
-          <p class="link link-hover">Learn More</p>
+        <!-- news 1 -->
+        <div class="card bg-base-100 lg:w-96 mx-4 shadow-xl">
+            <figure class="px-5 pt-10">
+                <img src="./images/new/house.jpg" alt="Sell your house" class="rounded-xl" />
+            </figure>
+            <div class="card-body justify-start text-left">
+                <p class="text-[#777777] text-sm">Feb 05, 2027</p>
+                <h2 class="card-title text-textH">Collecting 8 points for <br> discount</h2>
+                <p class="text-sm">Join our rewards program and start earning points with every purchase. Redeem your points for exclusive discounts and offers tailored just for you!</p>
+                <p class="link link-hover">Learn More</p>
+            </div>
         </div>
-      </div>
-      <!-- news 2 -->
-      <div class="card bg-base-100 lg:w-96 mx-4 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="./images/new/house.jpg" alt="what people wants" class="rounded-xl" />
-        </figure>
-        <div class="card-body justify-start text-left">
-          <p class="text-[#777777] text-sm">Feb 05, 2027</p>
-          <h2 class="card-title">Collecting 8 points for <br> discount</h2>
-          <p>There are many variations of passages of Lorem Ipsum available.</p>`
-          <p class="link link-hover">Learn More</p>
+        <!-- news 2 -->
+        <div class="card bg-base-100 lg:w-96 mx-4 shadow-xl">
+            <figure class="px-5 pt-10">
+                <img src="./images/new/house.jpg" alt="What people want" class="rounded-xl" />
+            </figure>
+            <div class="card-body justify-start text-left">
+                <p class="text-[#777777] text-sm">Feb 05, 2027</p>
+                <h2 class="card-title text-textH">Limited Time Offer on Select Items</h2>
+                <p class="text-sm">Don’t miss out on our limited-time discounts on select products. Shop now and save big on your favorites!</p>
+                <p class="link link-hover">Learn More</p>
+            </div>
         </div>
-      </div>
-      <!-- news 3 -->
-      <div class="card bg-base-100 lg:w-96 mx-4 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="./images/new/house.jpg" alt="Houses on sales" class="rounded-xl" />
-        </figure>
-        <div class="card-body justify-start text-left">
-          <p class="text-[#777777] text-sm">Feb 05, 2027</p>
-          <h2 class="card-title">Collecting 8 points for <br> discount</h2>
-          <p>There are many variations of passages of Lorem Ipsum available.</p>`
-          <p class="link link-hover">Learn More</p>
+        <!-- news 3 -->
+        <div class="card bg-base-100 lg:w-96 mx-4 shadow-xl">
+            <figure class="px-5 pt-10">
+                <img src="./images/new/house.jpg" alt="Houses on sales" class="rounded-xl" />
+            </figure>
+            <div class="card-body justify-start text-left">
+                <p class="text-[#777777] text-sm">Feb 05, 2027</p>
+                <h2 class="card-title text-textH">Seasonal Sales: Up to 50% Off!</h2>
+                <p class="text-sm">Take advantage of our seasonal sales with discounts of up to 50% off on various items. Stock up on essentials while saving money!</p>
+                <p class="link link-hover">Learn More</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
   <!-- Sell house -->
-  <section id="sell-property" class="lg:w-11/12 border border-dotted border-rose-500 mx-auto p-10 rounded-lg">
+  <section id="sell-property" class="lg:w-11/12 border border-dotted border-primary mx-auto p-10 rounded-lg">
     <div class="text-center">
-      <h2 class="md:text-4xl mb-5 ">Sell Your House</h2>
+      <h2 class="md:text-4xl mb-5 text-textH ">Sell Your House</h2>
 
-      <p class="lg:max-w-3xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in some form, by injected humour, or randomised words which don't look even
-        slightly believable. </p>
+      <p class="lg:max-w-3xl mx-auto text-textB">Sell Your Home Quickly and Easily with eHouse – Get the Best Price for
+        Your
+        Property!</p>
     </div>
     <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
@@ -539,18 +539,19 @@
           <span class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"></span>
 
           <div class="p-8 sm:p-16 lg:p-24">
-            <h2 class="text-rose-500 text-2xl font-bold sm:text-3xl">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, debitis.
+            <h2 class="text-textH text-2xl font-bold sm:text-3xl">
+              Ready to move on to your next adventure?
             </h2>
 
-            <p class="mt-4 text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, molestiae! Quidem est
-              esse numquam odio deleniti, beatae, magni dolores provident quaerat totam eos, aperiam
-              architecto eius quis quibusdam fugiat dicta.
+            <p class="mt-4 text-textB">
+              Get the most out of your home sale with eHouse. Our personalized selling strategies are designed to
+              highlight what makes your property unique. We focus on maximizing visibility, negotiating the best terms,
+              and ensuring a smooth transaction process. Trust us to turn your home into a sought-after listing and
+              achieve the best possible results.
             </p>
 
             <a href="#"
-              class="mt-8 inline-block rounded border border-rose-600 bg-rose-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-rose-600 focus:outline-none focus:ring active:text-rose-500">
+              class="mt-8 inline-block rounded border border-primary bg-secondary px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-primary focus:outline-none focus:ring active:text-primary">
               Get in Touch
             </a>
           </div>
@@ -559,34 +560,51 @@
     </div>
   </section>
   <!-- employees -->
-  <section class="container lg:w-4/5 mx-auto mb-24">
-    <h2 class="text-4xl text-center mb-5">Meet our employees</h2>
-    <p class="text-center mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+  <section class="container lg:w-4/5 mx-auto mb-24 my-24">
+    <h2 class="text-4xl text-center mb-5 text-textH">Meet our employees</h2>
+    <p class="text-center mb-5">Meet our best employees who are always ready to help you</p>
+
     <div class="grid gap-6 grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
       <div class="w-96 mx-auto">
         <a href="#" class="group relative block bg-black">
-          <img alt=""
-            src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
-            class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-
-          <div class="relative p-4 sm:p-6 lg:p-8">
-            <p class="text-sm font-medium uppercase tracking-widest text-pink-500">CEO</p>
-
-            <p class="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
-
-            <div class="mt-32 sm:mt-48 lg:mt-64">
-              <div
-                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                <p class="text-sm text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
-                  quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
-                </p>
-              </div>
+            <img alt="CEO Tony Wayne"
+                src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+    
+            <div class="relative p-4 sm:p-6 lg:p-8">
+                <p class="text-sm font-medium uppercase tracking-widest text-accent">CEO</p>
+                <p class="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
+    
+                <div class="mt-32 sm:mt-48 lg:mt-64">
+                    <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                        <p class="text-sm text-white">
+                            Tony leads our organization with a passion for innovation and a commitment to excellence, ensuring our clients receive the highest level of service and support.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
         </a>
-
-      </div>
+    </div>
+    <div class="w-96 mx-auto">
+      <a href="#" class="group relative block bg-black">
+          <img alt="Manager Alex Johnson"
+              src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+              class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
+  
+          <div class="relative p-4 sm:p-6 lg:p-8">
+              <p class="text-sm font-medium uppercase tracking-widest text-accent">Manager</p>
+              <p class="text-xl font-bold text-white sm:text-2xl">Alex Johnson</p>
+  
+              <div class="mt-32 sm:mt-48 lg:mt-64">
+                  <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                      <p class="text-sm text-white">
+                          Alex oversees daily operations and team performance, ensuring that projects are completed efficiently and effectively while fostering a positive work environment.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </a>
+  </div>
       <div class="w-96 mx-auto">
         <a href="#" class="group relative block bg-black">
           <img alt=""
@@ -594,41 +612,16 @@
             class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
 
           <div class="relative p-4 sm:p-6 lg:p-8">
-            <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Manager</p>
+            <p class="text-sm font-medium uppercase tracking-widest text-accent">Assistant</p>
 
-            <p class="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
-
-            <div class="mt-32 sm:mt-48 lg:mt-64">
-              <div
-                class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                <p class="text-sm text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
-                  quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-
-      </div>
-      <div class="w-96 mx-auto">
-        <a href="#" class="group relative block bg-black">
-          <img alt=""
-            src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
-            class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50" />
-
-          <div class="relative p-4 sm:p-6 lg:p-8">
-            <p class="text-sm font-medium uppercase tracking-widest text-pink-500">Assistant</p>
-
-            <p class="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
+            <p class="text-xl font-bold text-white sm:text-2xl">Jordan Smith</p>
 
             <div class="mt-32 sm:mt-48 lg:mt-64">
               <div
                 class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                <p class="text-sm text-white">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perferendis hic asperiores
-                  quibusdam quidem voluptates doloremque reiciendis nostrum harum. Repudiandae?
-                </p>
+              <p class="text-sm text-white">
+                  Jordan helps streamline communication and coordinates various projects. Always ready to assist, they contribute significantly to the team's success and foster a collaborative work environment.
+              </p>
               </div>
             </div>
           </div>
@@ -641,7 +634,7 @@
   <section id="Rent-property">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 shadow-md rounded-md">
       <div class="max-w-3xl">
-        <h2 class="text-4xl mb-5 text-rose-500">
+        <h2 class="text-4xl mb-5 text-textH">
           Rent a house now
         </h2>
       </div>
@@ -652,70 +645,77 @@
         </div>
 
         <div class="lg:py-16">
-          <article class="space-y-4 text-gray-600">
+          <article class="space-y-4 text-textB">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-              eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae
-              eius quidem quam repellat.
+              Looking for a place to call home? Our rental houses offer a variety of options to suit your needs. Whether
+              you are looking for a cozy apartment or a spacious family home, we have something for everyone. Enjoy
+              modern amenities, beautiful neighborhoods, and the comfort of your own space.
             </p>
 
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum explicabo quidem
-              voluptatum voluptas illo accusantium ipsam quis, vel mollitia? Vel provident culpa
-              dignissimos possimus, perferendis consectetur odit accusantium dolorem amet voluptates
-              aliquid, ducimus tempore incidunt quas. Veritatis molestias tempora distinctio
-              voluptates sint! Itaque quasi corrupti, sequi quo odit illum impedit!
+              Renting a house provides flexibility and convenience. With our easy application process, you can quickly
+              find the perfect place to live. Experience the joy of having your own backyard, a garage, and the freedom
+              to decorate your space as you wish. Contact us today to schedule a viewing and take the first step towards
+              your new home!
             </p>
           </article>
         </div>
       </div>
     </div>
 
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 my-24">
       <header class="text-center">
-        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Highly reccomended!!</h2>
-
-        <p class="mx-auto mt-4 max-w-md text-gray-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
+        <h2 class="text-xl text-gray-900 sm:text-3xl text-textH">Highly Recommended!!</h2>
+        <p class="mx-auto mt-4 max-w-md text-textB">
+          Here are the top 3 recommended houses for rent
         </p>
       </header>
 
       <ul class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
         <li>
           <a href="#" class="group relative block">
-            <img src="./images/new/house.jpg" alt=""
+            <img src="./images/new/house.jpg" alt="Casual House"
               class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90" />
 
-            <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
-              <h3 class="text-xl font-medium text-white">Casual House</h3>
-
-              <button class="btn glass mt-4">Rent Now</button>
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-6 bg-black bg-opacity-50">
+              <h3 class="text-xl font-medium text-white">Cozy Casual House</h3>
+              <p class="text-white mt-1">$1,200/month - 3 beds, 2 baths</p>
+              <button
+                class="btn bg-blue-600 text-white font-semibold py-2 px-4 rounded mt-4 hover:bg-blue-700 transition duration-300">
+                Explore Details
+              </button>
             </div>
           </a>
         </li>
 
         <li>
           <a href="#" class="group relative block">
-            <img src="./images/new/house.jpg" alt=""
+            <img src="./images/new/house.jpg" alt="Duplex"
               class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90" />
 
-            <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
-              <h3 class="text-xl font-medium text-white">Duplex</h3>
-
-              <button class="btn glass mt-4">Rent Now</button>
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-6 bg-black bg-opacity-50">
+              <h3 class="text-xl font-medium text-white">Spacious Duplex</h3>
+              <p class="text-white mt-1">$1,800/month - 4 beds, 3 baths</p>
+              <button
+                class="btn bg-green-600 text-white font-semibold py-2 px-4 rounded mt-4 hover:bg-green-700 transition duration-300">
+                View More
+              </button>
             </div>
           </a>
         </li>
 
         <li class="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
           <a href="#" class="group relative block">
-            <img src="./images/new/house.jpg" alt=""
+            <img src="./images/new/house.jpg" alt="Modern House"
               class="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90" />
 
-            <div class="absolute inset-0 flex flex-col items-start justify-end p-6">
-              <h3 class="text-xl font-medium text-white">Modern</h3>
-
-              <button class="btn glass mt-4">Rent Now</button>
+            <div class="absolute inset-0 flex flex-col items-start justify-end p-6 bg-black bg-opacity-50">
+              <h3 class="text-xl font-medium text-white">Contemporary Modern Home</h3>
+              <p class="text-white mt-1">$2,500/month - 5 beds, 4 baths</p>
+              <button
+                class="btn bg-red-600 text-white font-semibold py-2 px-4 rounded mt-4 hover:bg-red-700 transition duration-300">
+                Schedule a Tour
+              </button>
             </div>
           </a>
         </li>
@@ -797,9 +797,9 @@
     keenSliderNext.addEventListener('click', () => keenSlider.next())
   </script>
   <!-- customers -->
-  <section id="Blog" class="bg-white my-24">
+  <section id="Blog" class="w-4/5 mx-auto">
     <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <h2 class="text-center text-4xl  tracking-tight text-gray-900 sm:text-5xl">
+      <h2 class="text-center text-4xl tracking-tight text-textH sm:text-3xl">
         Read trusted reviews from our customers
       </h2>
 
@@ -813,7 +813,7 @@
                   class="size-14 rounded-full object-cover" />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-yellow-500">
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
                       <path
                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -841,9 +841,10 @@
               </div>
 
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                I recently rented a house from this agency, and I couldn't be happier with my experience! The staff was
+                incredibly helpful and attentive, guiding me through every step of the process. The property itself
+                exceeded my expectations—spacious, well-maintained, and in a great location. I highly recommend this
+                agency to anyone looking for a new home!"
               </p>
             </blockquote>
           </div>
@@ -856,7 +857,7 @@
                   class="size-14 rounded-full object-cover" />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-yellow-500">
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
                       <path
                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -884,9 +885,10 @@
               </div>
 
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                I recently rented a house from this agency, and I couldn't be happier with my experience! The staff was
+                incredibly helpful and attentive, guiding me through every step of the process. The property itself
+                exceeded my expectations—spacious, well-maintained, and in a great location. I highly recommend this
+                agency to anyone looking for a new home!"
               </p>
             </blockquote>
           </div>
@@ -899,7 +901,7 @@
                   class="size-14 rounded-full object-cover" />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-yellow-500">
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
                       <path
                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -927,9 +929,10 @@
               </div>
 
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                I recently rented a house from this agency, and I couldn't be happier with my experience! The staff was
+                incredibly helpful and attentive, guiding me through every step of the process. The property itself
+                exceeded my expectations—spacious, well-maintained, and in a great location. I highly recommend this
+                agency to anyone looking for a new home!"
               </p>
             </blockquote>
           </div>
@@ -942,7 +945,7 @@
                   class="size-14 rounded-full object-cover" />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-yellow-500">
                     <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
                       <path
                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -970,9 +973,10 @@
               </div>
 
               <p class="mt-4 text-gray-700">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe illo est quia obcaecati neque quibusdam eius
-                accusamus error officiis atque voluptates magnam!
+                I recently rented a house from this agency, and I couldn't be happier with my experience! The staff was
+                incredibly helpful and attentive, guiding me through every step of the process. The property itself
+                exceeded my expectations—spacious, well-maintained, and in a great location. I highly recommend this
+                agency to anyone looking for a new home!"
               </p>
             </blockquote>
           </div>
@@ -1005,11 +1009,11 @@
     </div>
   </section>
   <!-- footer -->
-  <footer id="footer" class="bg-white">
+  <footer id="footer" class="">
     <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
-          <div class="text-rose-500">
+          <div class="text-primary">
             <svg class="h-8" viewBox="0 0 118 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M37.83 19.2047C37.2352 19.237 36.6469 19.0679 36.16 18.7247C35.9566 18.5739 35.7929 18.3758 35.6831 18.1476C35.5733 17.9193 35.5208 17.6678 35.53 17.4147V8.1447C35.5252 8.1055 35.5293 8.0656 35.5422 8.0282C35.555 7.9908 35.5762 7.9569 35.6042 7.9289C35.6322 7.9009 35.6661 7.8797 35.7035 7.8669C35.7409 7.854 35.7808 7.8499 35.82 7.8547H37.5C37.69 7.8547 37.78 7.9547 37.78 8.1447V16.6947C37.78 17.0747 37.95 17.2647 38.3 17.2647C38.4484 17.2708 38.5968 17.254 38.74 17.2147C38.94 17.2147 39.05 17.2747 39.06 17.4547L39.21 18.7047C39.2172 18.7412 39.2165 18.7787 39.208 18.8149C39.1995 18.851 39.1833 18.885 39.1605 18.9143C39.1378 18.9437 39.109 18.9679 39.0762 18.9852C39.0433 19.0025 39.0071 19.0126 38.97 19.0147C38.602 19.1363 38.2175 19.2004 37.83 19.2047Z"
